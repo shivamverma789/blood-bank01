@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStream - Blood Bank Management System</title>
+    <meta name="description" content="LifeStream is a comprehensive blood bank management system that connects donors with recipients and ensures a steady supply of life-saving blood.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="logo">
+                <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="LifeStream Logo" width="32" height="32">
+                <span>LifeStream</span>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/donor.html">Donate Blood</a></li>
+                <li><a href="/request.html">Request Blood</a></li>
+                <li><a href="/inventory.html">Inventory</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Donation Can Save a Life</h1>
+                <p>Every drop counts. Join our mission to ensure blood availability for those in need.</p>
+                <div class="hero-buttons">
+                    <a href="/donor.html" class="btn btn-primary">
+                        <img src="https://api.iconify.design/lucide:heart.svg?color=%23ffffff" alt="" width="20" height="20">
+                        Donate Blood
+                    </a>
+                    <a href="/request.html" class="btn btn-outline">Request Blood</a>
+                </div>
+            </div>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" fill="#ffffff">
+                <path d="M0,64L40,58.7C80,53,160,43,240,42.7C320,43,400,53,480,58.7C560,64,640,64,720,58.7C800,53,880,43,960,42.7C1040,43,1120,53,1200,58.7C1280,64,1360,64,1400,64L1440,64L1440,100L1400,100C1360,100,1280,100,1200,100C1120,100,1040,100,960,100C880,100,800,100,720,100C640,100,560,100,480,100C400,100,320,100,240,100C160,100,80,100,40,100L0,100Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <img src="https://api.iconify.design/lucide:heart.svg?color=%23dc2626" alt="" width="24" height="24">
+                    </div>
+                    <h3>5,000+</h3>
+                    <p>Lives Saved</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <img src="https://api.iconify.design/lucide:users.svg?color=%233b82f6" alt="" width="24" height="24">
+                    </div>
+                    <h3>1,200+</h3>
+                    <p>Blood Donors</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="24" height="24">
+                    </div>
+                    <h3>8</h3>
+                    <p>Blood Types</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <img src="https://api.iconify.design/lucide:clock.svg?color=%2322c55e" alt="" width="24" height="24">
+                    </div>
+                    <h3>24/7</h3>
+                    <p>Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Donate Blood?</h2>
+                <p>Blood donation is a critical lifeline for many people. Your contribution makes a significant difference.</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <img src="https://api.iconify.design/lucide:activity.svg?color=%23dc2626" alt="" width="24" height="24">
+                    </div>
+                    <h3>Save Lives</h3>
+                    <p>A single donation can save up to 3 lives. Your blood helps accident victims, surgery patients, and those battling illnesses.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <img src="https://api.iconify.design/lucide:award.svg?color=%23dc2626" alt="" width="24" height="24">
+                    </div>
+                    <h3>Health Benefits</h3>
+                    <p>Donating blood can reduce the risk of heart disease and cancer. It also helps in reducing iron levels and generating new blood cells.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <img src="https://api.iconify.design/lucide:users.svg?color=%23dc2626" alt="" width="24" height="24">
+                    </div>
+                    <h3>Community Impact</h3>
+                    <p>By donating blood, you contribute to your community's healthcare resources and emergency preparedness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blood Types Section -->
+    <section class="blood-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Understanding Blood Types</h2>
+                <p>Different blood types have different compatibilities. Learn about your blood type and who can receive it.</p>
+            </div>
+            <div class="blood-types-grid">
+                <div class="blood-type-card" data-type="A+">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>A+</h3>
+                </div>
+                <div class="blood-type-card" data-type="A-">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>A-</h3>
+                </div>
+                <div class="blood-type-card" data-type="B+">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>B+</h3>
+                </div>
+                <div class="blood-type-card" data-type="B-">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>B-</h3>
+                </div>
+                <div class="blood-type-card" data-type="AB+">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>AB+</h3>
+                </div>
+                <div class="blood-type-card" data-type="AB-">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>AB-</h3>
+                </div>
+                <div class="blood-type-card" data-type="O+">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>O+</h3>
+                </div>
+                <div class="blood-type-card" data-type="O-">
+                    <div class="blood-icon">
+                        <img src="https://api.iconify.design/lucide:droplet.svg?color=%23dc2626" alt="" width="36" height="36">
+                    </div>
+                    <h3>O-</h3>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="/inventory.html" class="btn btn-outline">View Current Blood Inventory</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Make a Difference?</h2>
+            <div class="cta-buttons">
+                <a href="/donor.html" class="btn btn-white">Become a Donor</a>
+                <a href="/request.html" class="btn btn-outline-white">Request Blood</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Donor Stories</h2>
+                <p>Hear from those who have donated blood and made a difference.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Michael Johnson" class="testimonial-image">
+                    <p class="quote">"I've been donating blood for over 5 years now. It's a small effort from my side that can save someone's life."</p>
+                    <h4>Michael Johnson</h4>
+                    <p class="role">Regular Donor</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=100" alt="David Chen" class="testimonial-image">
+                    <p class="quote">"After my wife needed blood during an emergency surgery, I realized how important donors are. Now I donate regularly."</p>
+                    <h4>David Chen</h4>
+                    <p class="role">Donor since 2019</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Miller" class="testimonial-image">
+                    <p class="quote">"The staff at LifeStream make the donation process so easy and comfortable. I'm proud to be a part of this mission."</p>
+                    <h4>Sarah Miller</h4>
+                    <p class="role">New Donor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LifeStream</h3>
+                    <p>Connecting donors and recipients to ensure a steady supply of life-saving blood for those in need.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="https://api.iconify.design/lucide:facebook.svg?color=%23ffffff" alt="Facebook" width="18" height="18">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="https://api.iconify.design/lucide:twitter.svg?color=%23ffffff" alt="Twitter" width="18" height="18">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="https://api.iconify.design/lucide:instagram.svg?color=%23ffffff" alt="Instagram" width="18" height="18">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/donor.html">Donate Blood</a></li>
+                        <li><a href="/request.html">Request Blood</a></li>
+                        <li><a href="/inventory.html">Blood Inventory</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <img src="https://api.iconify.design/lucide:map-pin.svg?color=%23dc2626" alt="" width="18" height="18">
+                            <span>123 Medical Avenue, Healthcare City, NY 10001</span>
+                        </li>
+                        <li>
+                            <img src="https://api.iconify.design/lucide:phone.svg?color=%23dc2626" alt="" width="18" height="18">
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <img src="https://api.iconify.design/lucide:mail.svg?color=%23dc2626" alt="" width="18" height="18">
+                            <span>info@lifestream.org</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Blood Donation</h3>
+                    <p>Your donation can save up to 3 lives. Schedule your donation today and be someone's hero.</p>
+                    <a href="/donor.html" class="btn btn-primary">
+                        <img src="https://api.iconify.design/lucide:heart.svg?color=%23ffffff" alt="" width="16" height="16">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> LifeStream Blood Bank. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
