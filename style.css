@@ -68,11 +68,14 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline {
     background-color: transparent;
     border: 1px solid var(--primary);
-    color: var(--primary);
+    color: #fff;
+    border-color: #fff;
 }
 
 .btn-outline:hover {
     background-color: var(--primary-light);
+    color: var(--primary);
+
 }
 
 .btn-white {
